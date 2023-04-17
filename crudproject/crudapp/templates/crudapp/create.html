@@ -1,0 +1,15 @@
+{% extends 'crudapp/base.html' %}
+
+{%block body_block %}
+<div class="container" align="center">
+<h1>Employee's Informations </h1>
+<hr>
+<form method="post">
+    {%csrf_token%}
+    {{form.as_p}}
+
+</form>
+    <a href="/home" class="btn btn-success btn-large">Insert New Employee </a>
+
+</div>
+{%endblock%}

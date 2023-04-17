@@ -1,0 +1,17 @@
+{% extends 'crudapp/base.html' %}
+
+{% block body_block %}
+<h1>Employee Update Form</h1>
+<form method="post">
+    {%csrf_token%}
+    EmpNumber:<input type="text" name="empno" value="{{employee.empno}}"><br>
+    EmpName:<input type="text" name="empno" value="{{employee.empno}}"><br>
+    EmpSalary:<input type="text" name="empno" value="{{employee.empno}}"><br>
+    EmpAddress:<input type="text" name="empno" value="{{employee.empno}}"><br>
+    <input type="submit" name="" value="Update">
+
+</form>
+
+
+
+{% endblock% }
